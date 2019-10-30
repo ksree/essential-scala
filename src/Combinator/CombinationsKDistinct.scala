@@ -18,6 +18,4 @@ object CombinationsKDistinct extends App {
         sl.head :: _
       }
     }
-
-
 }
