@@ -1,0 +1,11 @@
+bin/
+project/
+target/
+build/
+.idea
+.DS_Store
+*.class
+.history
+.scala_dependencies
+.cache
+.cache-main
