@@ -9,3 +9,4 @@ build/
 .scala_dependencies
 .cache
 .cache-main
+.idea/workspace.xml
