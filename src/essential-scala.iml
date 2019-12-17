@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SortingAlgs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ArrayProblems" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ConferenceTrackManagement" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ConferenceTrackManagementTest" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/RegExpr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kata" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TestKata" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.12.10" level="application" />
+  </component>
+</module>

@@ -11,7 +11,9 @@ object Permutations extends App{
   def sort(in: String): String = {
     in.sorted
   }
+  val t = Array("I")
   assert(checkPermutations("NoMoTown", "MoNoTown"), true)
   assert(checkPermutations("DSfsdfsdfsdsfsdf", "MoNoTown"), false)
+
 
 }

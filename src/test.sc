@@ -1,47 +1,18 @@
-val y = List(15, 10, 5, 8,2, 20, 12)
+import scala.util.matching.Regex
 
-y.span( _ %2 == 0 )
+/*Your order, please
+Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
 
+Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
 
-abstract class Post
-abstract class Pull
+If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.
+ */
 
-val hex = "0100"
-val l = hex.size
+object Text {
 
-Integer.parseInt(hex, 2)
-
-
-hex.toLowerCase().toList.map("0123456789abcdef".indexOf(_)).map(e => {println(e * 16); e }).reduceLeft(_ * 16 + _)
-
-
-hex.toLowerCase().toList.map("0123456789abcdef".indexOf(_))
-
-0 +48 + 64  + 160 + 176  + 192
-
-def baseToInt(base: String, input: String): Int ={
-  input.toList.map(base.indexOf(_)).map(e=> { println(e + "*" + base.length); e}).reduceLeft(_ * base.length + _)
-}
-
-baseToInt("01", "0010")
-val a = Array(1,2,3,4)
-
-var min: Int = Int.MaxValue
-var max: Int = Int.MaxValue
-
-
-for(i: Int <- Array(1,2,3,4,5)){
-   if(i < min) min = i;
-   if(i > max) max = i;
-}
-
-
-def isPrime(n: Int): Boolean = {
-  for(x <- (2 to Math.sqrt(n).toInt) ){
-    println(x)
-    if(n % x == 0)  return false
+  def order(str: String): String = {
+    val regex: Regex = """(.*?)(\d{1}\s*)""".r
+    (for(m <- regex.findAllMatchIn(str))
+    yield(m.group(0),m.group(1))).toSeq.sortBy(_._2.trim.toInt).map(_._1).mkString(" ")
   }
-  return true
 }
-
-isPrime(3)
